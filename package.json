@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "jest --noStackTrace --watchAll"
+    "test": "jest --noStackTrace --watchAll --detectOpenHandles"
   },
   "jest": {
-    "testPathIgnorePatterns": ["__tests__/mock*"]
+    "testPathIgnorePatterns": [
+      "__tests__/mock*"
+    ]
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +19,7 @@
     "body-parser": "^1.20.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
     "pg": "^8.8.0"
   },
   "devDependencies": {
